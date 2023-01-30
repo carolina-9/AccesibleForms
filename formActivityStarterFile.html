@@ -40,9 +40,9 @@
 
 	<fieldset>
 		<legend>Preferred Contact Method<span class ="required">*</span></legend>
-		<input type = "radio" name ="contactPref" id="prefPhone">
+		<input type = "radio" name ="contactPref" id="prefPhone" required>
 		<label for = "prefPhone">Phone</label>
-		<input type = "radio" name ="contactPref" id ="prefEmail">
+		<input type = "radio" name ="contactPref" id ="prefEmail" required>
 		<label for = "prefEmail"> Email</label>
 	</fieldset>
 
@@ -100,8 +100,9 @@
 	</select>
 	
 	<label>Message<span class="required">*</span></label>
-	<textarea></textarea>
+	<textarea required></textarea>
 	<input type = "submit" name="mySubmit" id="mySubmit">
+	
 </form>
 </article>
 </main>
