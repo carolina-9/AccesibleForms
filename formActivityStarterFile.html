@@ -31,10 +31,20 @@
 <form action="https://wp.zybooks.com/form-viewer.php" method ="Post" >
 	<label for = "myName">Full Name<span class="required">*</span></label>
 	<input  id="myName" name ="myName" autocomplete="name" type="text" required>
+
 	<label for ="myEmail">Email<span class="required">*</span></label>
 	<input  id="myEmail" name ="myEmail" autocomplete="email" type="email" required>
+
 	<label for = "myPhone">Phone<span class="required">*</span></label>
 	<input  id="myPhone" name ="myPhone" autocomplete="tel" type="tel" required>
+
+	<fieldset>
+		<legend>Preferred Contact Method<span class ="required">*</span></legend>
+		<input type = "radio" name ="contactPref" id="prefPhone">
+		<label for = "prefPhone">Phone</label>
+		<input type = "radio" name ="contactPref" id ="prefEmail">
+		<label for = "prefEmail"> Email</label>
+	</fieldset>
 
 	<label for="state">State of residence:</label>
 	<select id="state" name="state">
@@ -87,18 +97,9 @@
 	  <option value="West Virginia">West Virginia (WV)</option>
 	  <option value="Wisconsin">Wisconsin (WI)</option>
 	  <option value="Wyoming">Wyoming (WY)</option>
-
 	</select>
 	
-	<fieldset>
-		<legend>Preferred Contact Method<span class ="required">*</span></legend>
-		<input  type = "radio" name ="contactPref" id="prefPhone">
-		<label for = "prefPhone">Phone</label>
-		<input type = "radio" name ="contactPref" id ="prefEmail">
-		<label for = "prefEmail"> Email</label>
-	</fieldset>
-	
-<label>Message<span class="required">*</span></label>
+	<label>Message<span class="required">*</span></label>
 	<textarea></textarea>
 	<input type = "submit" name="mySubmit" id="mySubmit">
 </form>
